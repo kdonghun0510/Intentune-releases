@@ -1,0 +1,30 @@
+title: "[Q] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!WARNING]
+        > **경로·토큰·비공개 코드·프롬프트 내용은 지우고 올려 주세요.** 이 글은 누구나 볼 수 있습니다.
+        > **Remove paths, tokens, private code and prompt text before posting.** Anyone can read this.
+
+        앱이 잘못 동작한다면 [버그 신고](https://github.com/kdonghun0510/Intentune-releases/issues/new?template=bug.yml)를 이용해 주세요. / If the app is misbehaving, please file a [bug report](https://github.com/kdonghun0510/Intentune-releases/issues/new?template=bug.yml).
+  - type: input
+    id: app-version
+    attributes:
+      label: 앱 버전 / App version
+      placeholder: "0.3.0"
+    validations:
+      required: false
+  - type: textarea
+    id: goal
+    attributes:
+      label: 하려는 것 / What you want to do
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: 시도한 것 / What you tried
+      description: 어떤 화면에서 무엇을 눌렀고 어떻게 됐는지 적어 주세요. / Which screen, what you pressed, and what happened.
+    validations:
+      required: false
