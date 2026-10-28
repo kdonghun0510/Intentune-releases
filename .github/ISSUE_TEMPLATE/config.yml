@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 질문 / Questions
+    url: https://github.com/kdonghun0510/Intentune-releases/discussions/categories/q-a
+    about: 사용 방법이나 동작에 대한 질문은 Discussions Q&A에 남겨 주세요. / Ask how to use the app or why it behaves a certain way in Discussions Q&A.
+  - name: 기능 제안 / Feature ideas
+    url: https://github.com/kdonghun0510/Intentune-releases/discussions/categories/ideas
+    about: 새 기능이나 개선 제안은 Discussions Ideas에 남겨 주세요. / Suggest new features or improvements in Discussions Ideas.
+  - name: 보안 문제 / Security problems
+    url: https://github.com/kdonghun0510/Intentune-releases/blob/main/SECURITY.md
+    about: 보안 문제는 공개 글로 올리지 말고 SECURITY.md의 방법으로 알려 주세요. / Do not post security problems publicly — report them as SECURITY.md describes.
