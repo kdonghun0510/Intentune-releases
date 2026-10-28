@@ -1,0 +1,61 @@
+name: 버그 신고 / Bug report
+description: 앱이 예상과 다르게 동작할 때 / When the app does not work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!WARNING]
+        > **붙이기 전에 경로·토큰·비공개 코드·프롬프트 내용을 지워 주세요.** 이 이슈는 누구나 볼 수 있습니다.
+        > **Before you paste, remove paths, tokens, private code and prompt text.** Anyone can read this issue.
+
+        질문은 [Discussions Q&A](https://github.com/kdonghun0510/Intentune-releases/discussions/categories/q-a), 기능 제안은 [Ideas](https://github.com/kdonghun0510/Intentune-releases/discussions/categories/ideas)에 남겨 주세요. 보안 문제는 [SECURITY.md](https://github.com/kdonghun0510/Intentune-releases/blob/main/SECURITY.md)를 봐 주세요.
+        Questions go to [Discussions Q&A](https://github.com/kdonghun0510/Intentune-releases/discussions/categories/q-a), feature ideas to [Ideas](https://github.com/kdonghun0510/Intentune-releases/discussions/categories/ideas). For security problems, see [SECURITY.md](https://github.com/kdonghun0510/Intentune-releases/blob/main/SECURITY.md).
+  - type: input
+    id: app-version
+    attributes:
+      label: 앱 버전 / App version
+      description: Preferences › Updates에서 확인할 수 있습니다. / Shown in Preferences › Updates.
+      placeholder: "0.3.0"
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS 버전 / macOS version
+      placeholder: "15.3.1"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 단계 / Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대한 동작 / Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 실제 동작 / Actual behavior
+      description: 오류 문구가 있으면 함께 적어 주세요. / Include any error message.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: 진단 정보 (선택) / Diagnostics (optional)
+      description: |
+        앱의 [진단 정보 복사](Preferences › 문의·신고 또는 도움말)로 복사한 내용을 붙여 주세요. 홈 경로·프로젝트 경로·토큰은 빠져 있지만, 붙이기 전에 한 번 확인해 주세요.
+        Paste what [Copy diagnostics] (Preferences › Help & feedback, or the help panel) copied. Home paths, project paths and tokens are left out, but look it over before you paste.
+      render: text
+    validations:
+      required: false
